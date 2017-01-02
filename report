@@ -1,0 +1,59 @@
+Assignment 2 Report
+
+Name:
+
+Part I.
+
+1. Performance of standard perceptron on the development data with 100% of the training data
+1a. spam precision: 98.87
+1b. spam recall: 98.28
+1c. spam F1 score: 98.58
+1d. ham precision: 95.86
+1e. ham recall: 97.26
+1f. ham F1 score: 96.55
+
+2. Performance of averaged perceptron on the development data with 100% of the training data
+2a. spam precision: 98.47
+2b. spam recall: 98.47
+2c. spam F1 score: 98.47
+2d. ham precision: 96.26
+2e. ham recall: 96.26
+2f. ham F1 score:96.26
+
+Part II.
+
+3. Performance of standard perceptron on the development data with 10% of the training data
+3a. spam precision: 96.20
+3b. spam recall: 82.06
+3c. spam F1 score: 88.57
+3d. ham precision: 67.69
+3e. ham recall: 92.06
+3f. ham F1 score: 78.02
+
+4. Performance of averaged perceptron on the development data with 10% of the training data
+4a. spam precision: 95.86
+4b. spam recall: 84.43
+4c. spam F1 score: 89.78
+4d. ham precision: 70.48
+4e. ham recall: 91.06
+4f. ham F1 score: 79.46
+
+Part III. You are welcome to reuse code you wrote for assignment 1,
+but we would like to know how you handled the following tasks.
+
+5. How did you calculate precision, recall and F1 score? If you used a
+separate script, please give the name of the script and describe how
+to run it.
+
+I have attached the script per_evaluation.py
+The calculations for precision, recall and F1 score are in the end of the file.
+
+6. How did you separate 10% of the training data? If you used a
+separate script, please give the name of the script and describe how
+to run it. Explain how you or your code choose the files.
+
+I have attached the script move_files.py
+-I hardcoded the source and destination directory.
+-The code recursively calculates the total number ham files and spam files.
+-It calculates the 10% count of ham and spam files.
+-The code recursively traverse the source directory and moves the 10% of ham and 10% of spam files to destination directory.

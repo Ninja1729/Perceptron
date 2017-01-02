@@ -1,0 +1,83 @@
+Calculated Spam Files : 4026
+Calculated Ham Files : 1149
+Actual Spam Files : 3675
+Actual Ham Files : 1500
+Match : 3908
+Mismatch : 1267
+Ham Precision : 60.139251523063535
+Ham Recall : 46.06666666666667
+Ham F1 score : 52.17063042657607
+Spam Precision : 79.90561351217089
+Spam Recall : 87.5374149659864
+Spam F1 Score : 83.54759122191923
+Accuracy : 75.51690821256038
+
+
+Calculated Spam Files : 4026
+Calculated Ham Files : 1149
+Actual Spam Files : 3675
+Actual Ham Files : 1500
+Match : 3908
+Mismatch : 1267
+Ham Precision : 60.139251523063535
+Ham Recall : 46.06666666666667
+Ham F1 score : 52.17063042657607
+Spam Precision : 79.90561351217089
+Spam Recall : 87.5374149659864
+Spam F1 Score : 83.54759122191923
+Accuracy : 75.51690821256038
+
+
+print ("Calculated Spam Files : "+str(cal_spam_count))
+print ("Calculated Ham Files : "+str(cal_ham_count))
+print ("Actual Spam Files : "+str(act_spam_count))
+print ("Actual Ham Files : "+str(act_ham_count))
+print ("Match : "+str(match))
+print ("Mismatch : "+str(mismatch))
+
+
+pre_ham = ham_match*100/cal_ham_count
+print("Ham Precision : "+str(pre_ham))
+recall_ham = ham_match*100/act_ham_count
+print("Ham Recall : "+str(recall_ham))
+f1_ham = (2 * pre_ham * recall_ham) / (pre_ham + recall_ham)
+print("Ham F1 score : "+str(f1_ham))
+
+pre_spam = spam_match*100/cal_spam_count
+print("Spam Precision : "+str(pre_spam))
+recall_spam = spam_match*100/act_spam_count
+print("Spam Recall : "+str(recall_spam))
+f1_spam = (2 * pre_spam * recall_spam) / (pre_spam + recall_spam)
+print("Spam F1 Score : "+str(f1_spam))
+
+#few other calculation(not part of assignmnet)
+accuracy = match*100/(act_ham_count+act_spam_count)
+print("Accuracy : "+str(accuracy))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
